@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam01</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Exam01</a>
+      <nav class="nav">
+        <a href="#features">소개</a>
+        <a href="#about">정보</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>심플하게 시작하세요</h1>
+        <p>군더더기 없는 깔끔한 프론트 페이지입니다.<br />필요한 내용으로 자유롭게 채워 보세요.</p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">시작하기</a>
+          <a href="#about" class="btn btn-ghost">더 알아보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">주요 특징</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>빠름</h3>
+            <p>외부 라이브러리 없이 HTML과 CSS만으로 가볍게 동작합니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>반응형</h3>
+            <p>데스크톱부터 모바일까지 어떤 화면에서도 자연스럽게 보입니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🎨</div>
+            <h3>쉬운 커스터마이징</h3>
+            <p>CSS 변수로 색상과 간격을 한 곳에서 손쉽게 바꿀 수 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about">
+        <h2 class="section-title">정보</h2>
+        <p>이 페이지는 exam01 예제를 위한 기본 템플릿입니다. 섹션을 추가하거나 문구를 바꿔서 원하는 서비스 소개 페이지로 확장할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2 class="section-title">문의하기</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('메시지가 전송되었습니다.');">
+          <input type="text" placeholder="이름" required />
+          <input type="email" placeholder="이메일" required />
+          <textarea rows="4" placeholder="메시지" required></textarea>
+          <button type="submit" class="btn btn-primary">보내기</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Exam01. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
