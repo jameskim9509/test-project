@@ -4,16 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exam01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 배경 장식 -->
+  <div class="bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">Exam01</a>
+      <a href="#" class="logo"><span class="logo-mark"></span>Exam01</a>
       <nav class="nav">
-        <a href="#features">소개</a>
-        <a href="#about">정보</a>
-        <a href="#contact">문의</a>
+        <a href="#features">특징</a>
+        <a href="#stats">성과</a>
+        <a href="#reviews">후기</a>
+        <a href="#contact" class="nav-cta">문의하기</a>
       </nav>
     </div>
   </header>
@@ -21,62 +33,132 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>심플하게 시작하세요</h1>
-        <p>군더더기 없는 깔끔한 프론트 페이지입니다.<br />필요한 내용으로 자유롭게 채워 보세요.</p>
-        <div class="hero-actions">
-          <a href="#features" class="btn btn-primary">시작하기</a>
-          <a href="#about" class="btn btn-ghost">더 알아보기</a>
+        <span class="badge reveal">✨ 새로운 경험의 시작</span>
+        <h1 class="reveal">
+          상상을 <span class="gradient-text">현실로</span><br />
+          만드는 가장 빠른 방법
+        </h1>
+        <p class="reveal">빛나는 아이디어를 멋진 결과물로. 지금 바로 경험해 보세요.</p>
+        <div class="hero-actions reveal">
+          <a href="#features" class="btn btn-primary">무료로 시작하기 →</a>
+          <a href="#stats" class="btn btn-glass">▶ 데모 보기</a>
         </div>
+
+        <div class="hero-visual reveal">
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <div class="window-body">
+              <div class="bar-chart">
+                <span style="--h: 40%"></span>
+                <span style="--h: 65%"></span>
+                <span style="--h: 50%"></span>
+                <span style="--h: 85%"></span>
+                <span style="--h: 70%"></span>
+                <span style="--h: 95%"></span>
+                <span style="--h: 80%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-1">🚀 <b>+128%</b> 성장</div>
+          <div class="float-card float-2">⭐ <b>4.9</b> 만족도</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="marquee-track">
+        <span>FAST</span><span>✦</span><span>BEAUTIFUL</span><span>✦</span><span>RESPONSIVE</span><span>✦</span><span>CREATIVE</span><span>✦</span>
+        <span>FAST</span><span>✦</span><span>BEAUTIFUL</span><span>✦</span><span>RESPONSIVE</span><span>✦</span><span>CREATIVE</span><span>✦</span>
       </div>
     </section>
 
     <section id="features" class="section">
       <div class="container">
-        <h2 class="section-title">주요 특징</h2>
+        <h2 class="section-title reveal">왜 <span class="gradient-text">Exam01</span>인가요?</h2>
+        <p class="section-sub reveal">모든 것을 하나로. 더 빠르고, 더 아름답게.</p>
         <div class="cards">
-          <article class="card">
+          <article class="card reveal">
             <div class="card-icon">⚡</div>
-            <h3>빠름</h3>
-            <p>외부 라이브러리 없이 HTML과 CSS만으로 가볍게 동작합니다.</p>
+            <h3>번개같은 속도</h3>
+            <p>가벼운 구조로 눈 깜짝할 새 로딩됩니다.</p>
           </article>
-          <article class="card">
-            <div class="card-icon">📱</div>
-            <h3>반응형</h3>
-            <p>데스크톱부터 모바일까지 어떤 화면에서도 자연스럽게 보입니다.</p>
-          </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="card-icon">🎨</div>
-            <h3>쉬운 커스터마이징</h3>
-            <p>CSS 변수로 색상과 간격을 한 곳에서 손쉽게 바꿀 수 있습니다.</p>
+            <h3>눈부신 디자인</h3>
+            <p>그라데이션과 유리 효과로 감각적인 화면을 만듭니다.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">📱</div>
+            <h3>완벽한 반응형</h3>
+            <p>어떤 기기에서도 흐트러짐 없이 보여집니다.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🔒</div>
+            <h3>든든한 보안</h3>
+            <p>안심하고 사용할 수 있는 견고한 기반을 제공합니다.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section section-alt">
-      <div class="container about">
-        <h2 class="section-title">정보</h2>
-        <p>이 페이지는 exam01 예제를 위한 기본 템플릿입니다. 섹션을 추가하거나 문구를 바꿔서 원하는 서비스 소개 페이지로 확장할 수 있습니다.</p>
+    <section id="stats" class="section">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><strong data-count="12000">0</strong><span>+ 사용자</span></div>
+          <div class="stat"><strong data-count="98">0</strong><span>% 만족도</span></div>
+          <div class="stat"><strong data-count="350">0</strong><span>+ 프로젝트</span></div>
+          <div class="stat"><strong data-count="24">0</strong><span>/7 지원</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">사용자 <span class="gradient-text">후기</span></h2>
+        <div class="reviews">
+          <figure class="review reveal">
+            <blockquote>“처음 보자마자 반했어요. 디자인이 정말 세련됐습니다.”</blockquote>
+            <figcaption><span class="avatar a1">김</span>김민지 · 디자이너</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>“속도가 놀라울 정도로 빨라서 작업 효율이 확 올라갔어요.”</blockquote>
+            <figcaption><span class="avatar a2">이</span>이준호 · 개발자</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>“팀 전체가 만족하며 쓰고 있습니다. 강력 추천해요!”</blockquote>
+            <figcaption><span class="avatar a3">박</span>박서연 · PM</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <div class="container contact">
-        <h2 class="section-title">문의하기</h2>
-        <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('메시지가 전송되었습니다.');">
-          <input type="text" placeholder="이름" required />
-          <input type="email" placeholder="이메일" required />
-          <textarea rows="4" placeholder="메시지" required></textarea>
-          <button type="submit" class="btn btn-primary">보내기</button>
-        </form>
+      <div class="container">
+        <div class="cta reveal">
+          <h2>지금 바로 <span class="gradient-text">시작해 보세요</span></h2>
+          <p>궁금한 점이 있다면 언제든 메시지를 남겨 주세요.</p>
+          <form class="contact-form" id="contact-form">
+            <div class="row">
+              <input type="text" placeholder="이름" required />
+              <input type="email" placeholder="이메일" required />
+            </div>
+            <textarea rows="4" placeholder="메시지" required></textarea>
+            <button type="submit" class="btn btn-primary">메시지 보내기 ✉</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
+      <a href="#" class="logo"><span class="logo-mark"></span>Exam01</a>
       <p>&copy; 2026 Exam01. All rights reserved.</p>
     </div>
   </footer>
+
+  <div class="toast" id="toast" hidden>🎉 메시지가 전송되었습니다!</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
